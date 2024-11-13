@@ -1,0 +1,97 @@
+.Section7 {
+    background: transparent;
+
+    .content {
+        margin-top: -180px;
+        width: 100%;
+        height: 340px;
+        background: rgb(87, 217, 166);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+
+        h1 {
+            font-size: 30px;
+            font-weight: 400;
+            font-family: "Source Code Pro", sans-serif;
+        }
+
+
+        .input_block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            input {
+                width: 400px;
+                height: 50px;
+                background: transparent;
+                border: 1px solid rgba(0, 0, 0, 0.745);
+                outline: none;
+                padding: 0 18px;
+                border-radius: 4px;
+            }
+
+            button {
+                border-radius: 4px;
+                background: rgb(28, 28, 51);
+                color: rgb(87, 217, 166);
+                width: 100px;
+                height: 50px;
+                border: none;
+            }
+        }
+    }
+}
+
+
+@media(max-width: 768px) {
+    .Section7 {
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 30px;
+    
+            h1 {
+                text-align: center;
+                font-size: 25px;
+                font-weight: 400;
+                font-family: "Source Code Pro", sans-serif;
+            }
+    
+    
+            .input_block {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 20px;
+    
+                input {
+                    width: 100%;
+                    height: 50px;
+                    background: transparent;
+                    border: 1px solid rgba(0, 0, 0, 0.745);
+                    outline: none;
+                    padding: 0 18px;
+                    border-radius: 4px;
+                }
+    
+                button {
+                    border-radius: 4px;
+                    background: rgb(28, 28, 51);
+                    color: rgb(87, 217, 166);
+                    width: 100%;
+                    height: 50px;
+                    border: none;
+                }
+            }
+        }
+    }
+}

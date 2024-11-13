@@ -1,0 +1,124 @@
+.Section3 {
+    width: 100%;
+    background: #1c1c33;
+
+    .content {
+        margin-top: 130px;
+        display: flex;
+        align-items: center;
+        gap: 60px;
+
+        .left {
+            display: flex;
+            background-image: url("/assets/IMAGE1.png");
+            width: 720px;
+            height: 600px;
+        }
+
+        .right {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 40px;
+
+            .title {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                h1 {
+                    font-weight: 700;
+                    font-size: 44px;
+                    line-height: 52px;
+                    color: #f6f6f8;
+                    font-family: "Source Code Pro", sans-serif;
+                }
+
+                .line {
+                    width: 100px;
+                    height: 2px;
+                    background: #57d9a6;
+                }
+            }
+
+            span {
+                font-weight: 400;
+                line-height: 33px;
+                color: #f6f6f8;
+                opacity: 0.6;
+                font-family: "Source Code Pro", sans-serif;
+            }
+
+            button {
+                background-color: #57d9a6;
+                width: 160px;
+                height: 50px;
+                border-radius: 4px;
+                border: none;
+                font-family: "Source Code Pro", sans-serif;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .Section3 {
+        .content {
+            display: flex;
+            flex-direction: column;
+            padding: 60px 0;
+            gap: 30px;
+
+            .left {
+                display: none;
+                background-image: url("/assets/IMAGE1.png");
+                width: 520px;
+                height: 400px;
+            }
+
+            .right {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+                gap: 70px;
+
+                .title {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    h1 {
+                        font-weight: 700;
+                        font-size: 27px;
+                        line-height: 52px;
+                        color: #f6f6f8;
+                    }
+
+                    .line {
+                        width: 300px;
+                        height: 2px;
+                        background: #57d9a6;
+                    }
+                }
+
+                span {
+                    font-weight: 400;
+                    line-height: 23px;
+                    color: #f6f6f8;
+                    opacity: 0.6;
+                }
+
+                button {
+                    background-color: #57d9a6;
+                    width: 160px;
+                    height: 50px;
+                    border-radius: 4px;
+                    border: none;
+                }
+            }
+        }
+    }
+}

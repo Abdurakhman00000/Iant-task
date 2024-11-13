@@ -1,0 +1,197 @@
+.Section3 {
+    width: 100%;
+    background: rgb(238, 238, 238);
+
+    .content {
+        padding: 150px 0;
+
+        .content_text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: baseline;
+            flex-direction: column;
+            margin-bottom: 25px;
+            gap: 10px;
+
+            h1 {
+                font-size: 25px;
+                font-weight: 700;
+                color: black;
+                font-family: "Source Code Pro", sans-serif;
+            }
+
+            .content_underline {
+                width: 100px;
+                height: 2px;
+                background: rgb(87, 217, 166);
+                margin-top: 4px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                margin-bottom: 15px;
+                color: black;
+                line-height: 24px;
+                font-family: "Source Code Pro", sans-serif;
+            }
+
+            button {
+                width: 173px;
+                height: 43px;
+                border-radius: 4px;
+                background: rgb(87, 217, 166);
+                font-size: 13px;
+                font-weight: 400;
+                border: none;
+                margin-top: 20px;
+                margin-bottom: 40px;
+                text-transform: uppercase;
+                font-family: "Source Code Pro", sans-serif;
+            }
+        }
+
+
+
+        .main_card {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            padding-top: 40px;
+
+            .card_item {
+                width: 370px;
+                max-height: 270px;
+                background: white;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+
+                &.expanded {
+                    max-height: 500px;
+                }
+
+                .card_text {
+                    padding: 25px 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    gap: 17px;
+
+                    h3 {
+                        color: rgb(28, 28, 51);
+                        font-size: 21px;
+                        font-weight: 700;
+                        line-height: 28.8px;
+                        letter-spacing: 0%;
+                        font-family: "Source Code Pro", sans-serif;
+
+                    }
+
+                    span {
+                        color: rgb(78, 78, 101);
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 27px;
+                        letter-spacing: 0%;
+
+                    }
+
+                    .additionalInfo {
+                        margin-top: 10px;
+                        color: rgb(78, 78, 101);
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+
+                    }
+
+                    button {
+                        background: transparent;
+                        border: none;
+                        color: rgb(87, 217, 166);
+                        font-family: "Source Code Pro", sans-serif;
+                        font-size: 15px;
+                        font-weight: 400;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1150px) {
+    .Section3 {
+        .content {
+            .main_card {
+                .card_item {
+                    width: 300px;
+                    height: 300px;
+
+                    p {
+                        font-size: 16px;
+                        padding: 17px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 960px) {
+    .Section3 {
+        .content {
+            .main_card {
+                .card_item {
+                    width: 230px;
+                    height: 350px;
+                }
+
+                h2 {
+                    font-size: 16px;
+                }
+
+                p {
+                    font-size: 13px;
+                    padding: 13px 0;
+                }
+
+                button {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 750px) {
+    .Section3 {
+        .content {
+            .main_card {
+                display: flex;
+                flex-direction: column;
+                gap: 26px;
+
+                .card_item {
+                    width: 100%;
+                    height: auto;
+
+                    h2 {
+                        font-size: 15px;
+                    }
+
+                    p {
+                        font-size: 11px;
+                        padding: 19px 0;
+                    }
+
+                    button {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

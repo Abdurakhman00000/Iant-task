@@ -1,0 +1,17 @@
+.PreHeader {
+    width: 100%;
+    background: rgb(87, 217, 166);
+    text-align: center;
+    padding: 10px 0;
+
+    p {
+        font-family: "Source Code Pro", sans-serif;
+    }
+}
+
+
+@media(max-width:767px) {
+    .PreHeader {
+        display: none;
+    }
+}

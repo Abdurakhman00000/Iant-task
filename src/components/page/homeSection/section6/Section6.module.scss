@@ -1,0 +1,300 @@
+.Section1 {
+    width: 100%;
+    background: rgb(238, 238, 238);
+    .content {
+        padding: 150px 0;
+        padding-bottom: 340px;
+        .content_text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 25px;
+            gap: 10px;
+
+            h1 {
+                font-size: 25px;
+                font-weight: 700;
+                color: black;
+                font-family: "Source Code Pro", sans-serif;
+            }
+
+            .content_underline {
+                width: 100px;
+                height: 2px;
+                background: rgb(87, 217, 166);
+                margin-bottom: 22px;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                margin-bottom: 15px;
+                line-height: 24px;
+                color: black;
+                font-family: "Source Code Pro", sans-serif;
+            }
+
+            button {
+                width: 173px;
+                height: 43px;
+                border-radius: 4px;
+                background: rgb(87, 217, 166);
+                font-size: 13px;
+                font-weight: 400;
+                border: none;
+                text-transform: uppercase;
+                margin-top: 20px;
+                margin-bottom: 40px;
+                font-family: "Source Code Pro", sans-serif;
+            }
+        }
+
+        .main_card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .card_item {
+                width: 360px;
+                height: 390px;
+                background: white;
+
+                img {
+                    width: 100%;
+                    height: 197px;
+                    top: 0;
+                }
+
+                .card_text {
+                    padding: 24px 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    gap: 17px;
+
+                    h3 {
+                        font-size: 19px;
+                        font-weight: 400;
+                        font-family: "Source Code Pro", sans-serif;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: rgb(78, 78, 101);
+                        font-family: "Source Code Pro", sans-serif;
+                    }
+
+                    h5 {
+                        font-size: 18px;
+                        font-weight: 400;
+                        font-family: "Source Code Pro", sans-serif;
+                    }
+
+                    button {
+                        background: transparent;
+                        border: none;
+                        color: rgb(87, 217, 166); 
+                        font-family: "Source Code Pro", sans-serif;
+                        font-size: 15px;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+
+            .main_pagin { 
+                .non_card {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 50px;
+    
+                    .block {
+                        width: 360px;
+                        height: 390px;
+                        background: rgba(255, 255, 255, 0.768);
+                        animation: pulse 1.5s infinite ease-in-out;
+    
+                        @keyframes pulse {
+                            0% {
+                                transform: scale(1);
+                                opacity: 1;
+                            }
+    
+                            50% {
+                                transform: scale(0.95);
+                                opacity: 0.8;
+                            }
+    
+                            100% {
+                                transform: scale(1);
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media(max-width: 768px) {
+                .main_card {
+                    .non_card {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+
+                        .block {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 1150px) {
+    .Section1 {
+        .content {
+            .main_card {
+                .card_item {
+                    width: 300px;
+                    height: 390px;
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 960px) {
+    .Section1 {
+        .content {
+            .main_card {
+                .card_item {
+                    width: 230px;
+                    height: 280px;
+
+                    img {
+                        height: 150px;
+                    }
+
+                    .card_text {
+                        gap: 9px;
+
+                        h3 {
+                            font-size: 16px;
+                        }
+
+                        p {
+                            font-size: 10px;
+                        }
+
+                        h5 {
+                            font-size: 14px;
+                        }
+
+                        button {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 750px) {
+    .Section1 {
+        .content {
+            .main_card {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+
+                .card_item {
+                    width: 320px;
+                    height: 375px;
+
+                    img {
+                        height: 190px;
+                    }
+
+                    .card_text {
+                        gap: 16px;
+
+                        h3 {
+                            font-size: 18px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+
+                        h5 {
+                            font-size: 18px;
+                        }
+
+                        button {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+
+
+
+
+@media(max-width: 420px) {
+    .Section1 {
+        .content {
+            .content_text {
+                p {
+                    text-align: center;
+                }
+            }
+
+            .main_card {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+
+                .card_item {
+                    width: 100%;
+                    height: 365px;
+
+                    img {
+                        height: 190px;
+                    }
+
+                    .card_text {
+                        gap: 14px;
+
+                        h3 {
+                            font-size: 18px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+
+                        h5 {
+                            font-size: 18px;
+                        }
+
+                        button {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

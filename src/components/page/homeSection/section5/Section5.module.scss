@@ -1,0 +1,130 @@
+.Section6 {
+    background: #1c1c33;
+
+    .content {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        padding: 100px 0;
+
+        .left {
+            display: flex;
+            background-image: url("/assets/IMAGE2.png");
+            width: 625px;
+            height: 635px;
+        }
+
+        .right {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 30px;
+
+            .title {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                h1 {
+                    font-weight: 700;
+                    font-size: 44px;
+                    line-height: 52px;
+                    color: #f6f6f8;
+                    font-family: "Source Code Pro", sans-serif;
+                }
+
+                .line {
+                    width: 100px;
+                    height: 2px;
+                    background: #57d9a6;
+                }
+            }
+
+            span {
+                font-weight: 400;
+                line-height: 33px;
+                color: #f6f6f8;
+                opacity: 0.6;
+                font-family: "Source Code Pro", sans-serif;
+            }
+
+            button {
+                background-color: #57d9a6;
+                width: 160px;
+                height: 50px;
+                border-radius: 4px;
+                border: none;
+                color: rgb(28, 28, 51);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 27px;
+                letter-spacing: 1px;
+                font-family: "Source Code Pro", sans-serif;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .Section6 {
+        .content {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            padding: 60px 0;
+            gap: 30px;
+
+            .left {
+                display: flex;
+                flex-direction: column;
+                background-image: url("/assets/IMAGE2.png");
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 300px;
+            }
+
+            .right {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                .title {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    h1 {
+                        font-weight: 700;
+                        font-size: 27px;
+                        line-height: 52px;
+                        color: #f6f6f8;
+                    }
+
+                    .line {
+                        width: 300px;
+                        height: 2px;
+                        background: #57d9a6;
+                    }
+                }
+
+                span {
+                    font-weight: 400;
+                    line-height: 23px;
+                    color: #f6f6f8;
+                    opacity: 0.6;
+                }
+
+                button {
+                    background-color: #57d9a6;
+                    width: 160px;
+                    height: 50px;
+                    border-radius: 4px;
+                    border: none;
+                }
+            }
+        }
+    }
+}
